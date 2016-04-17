@@ -13,9 +13,4 @@ sudo pip install virtualenv
 brew install terminal-notifier
 
 #Setting up the virtual environment to avoid installing libraries system wide unnecesarily
-virtualenv venv
-source venv/bin/activate
-pip install beautifulsoup4
-
-# Deactivating virtualenv
-deactivate
+bash -c "virtualenv venv && source venv/bin/activate && pip install beautifulsoup4 && deactivate"
