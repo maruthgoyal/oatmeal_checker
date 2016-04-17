@@ -7,7 +7,7 @@ import sys
 
 def notify(message, url):
 
-    exString = 'terminal-notifier -message "%s" -open "%s" -sound "default" -appIcon "/Users/maruthgoyal/Desktop/oatmeal_proj/oatmeal.png"' % (message, url)
+    exString = 'terminal-notifier -message "%s" -open "%s" -sound "default" -appIcon $(pwd)/oatmeal.png' % (message, url)
     os.system(exString)
 
 if __name__ == '__main__':
