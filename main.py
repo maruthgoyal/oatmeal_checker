@@ -24,11 +24,10 @@ if __name__ == '__main__':
 
         if link['href'][8:] != currentName:
             u = "http://theoatmeal.com/comics/" + link["href"][8:]
-            print u
             notify("NEW COMIC", u)
             currentName = link["href"][8:]
 
             with open("cName", "w+") as f:
                 f.write(currentName)
 
-        time.sleep(3600)
+        time.sleep(1800)
