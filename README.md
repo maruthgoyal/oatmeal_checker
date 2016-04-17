@@ -14,18 +14,12 @@ Clone this repository to your location of choice
         cd Desktop <br />
         git clone https://github.com/maruthgoyal/oatmeal_checker.git <br />
 <br />
-Run the install.sh script <br />
+Run the scripts <br />
     • Open Terminal <br />
     • cd /wherever/you/have/cloned/the/project <br />
-    • source install.sh <br />
+    • source install.sh && source run.sh <br />
     • Enter your password when prompted to do so <br />
     • Wait for the installation to finish <br />
-    • Close the terminal <br />
-<br />
-Run the run.sh script to run the program <br />
-    • Open Terminal <br />
-    • cd /wherever/you/have/cloned/the/project <br />
-    • source run.sh <br />
     • Close the terminal <br />
 <br />
 
