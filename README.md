@@ -25,17 +25,10 @@ Run the install.sh script <br />
 Run the run.sh script to run the program <br />
     • Open Terminal <br />
     • cd /wherever/you/have/cloned/the/project <br />
-    • screen -S oatmeal_screen <br />
     • source run.sh <br />
-    • Press ctrl + a <br />
-    • Press d <br />
     • Close the terminal <br />
 <br />
-To terminate the program (if you want to) <br />
-    • Open Terminal <br />
-    • screen -X -S oatmeal_screen kill <br />
-    • Close the terminal <br />
-<br />
+
 And that's it! Enjoy your Oatmeal! <br />
 <br />
 NOTE: If your computer ever shuts down or you terminate the program, just execute the run.sh script again as specified above. <br />
