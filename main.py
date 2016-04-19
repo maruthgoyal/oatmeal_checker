@@ -17,17 +17,19 @@ if __name__ == '__main__':
 
     while True:
 
-        oatmeal = urllib2.urlopen("http://theoatmeal.com/comics").read()
-        soup = BeautifulSoup(oatmeal, 'html.parser')
+        try:
+            oatmeal = urllib2.urlopen("http://theoatmeal.com/comics").read()
+            soup = BeautifulSoup(oatmeal, 'html.parser')
 
-        link = soup.find_all("a", href=re.compile("^/comics/"), recursive=True)[0]
+            link = soup.find_all("a", href=re.compile("^/comics/"), recursive=True)[0]
 
-        if link['href'][8:] != currentName:
-            u = "http://theoatmeal.com/comics/" + link["href"][8:]
-            notify("NEW COMIC", u)
-            currentName = link["href"][8:]
+            if link['href'][8:] != currentName:
+                u = "http://theoatmeal.com/comics/" + link["href"][8:]
+                notify("NEW COMIC", u)
+                currentName = link["href"][8:]
 
-            with open("cName", "w+") as f:
-                f.write(currentName)
+                with open("cName", "w+") as f:
+                    f.write(currentName)
+        except urllib2.URLError as err: pass
 
-        time.sleep(1800)
+        time.sleep(1200)
